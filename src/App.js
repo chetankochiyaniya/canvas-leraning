@@ -1,24 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import { NavLink, Route, Routes } from 'react-router-dom';
+import BreakOut from './games/BreakOutGame';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <div className='App'>
+    <NavLink to="/game1"> Brekoutgame</NavLink>
     </div>
+    <Routes>
+    <Route path='/' element={<BreakOut/>}></Route>
+      <Route path='/game1' element={<BreakOut/>}></Route>
+    </Routes>
+    </>
   );
 }
 
