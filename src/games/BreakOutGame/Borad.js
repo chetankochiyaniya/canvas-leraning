@@ -8,7 +8,7 @@ const Borad =()=>{
         //const canvas = document.getElementById("canvas");s
         const canvas = canvasRef.current
         // const ctx = canvas.getContext("2d");
-        const ctx = canvas?.getContext('2D')
+        const ctx = canvas?.getContext('2d')
         if (ctx) {
             ctx.fillStyle = 'green';
             ctx.fillRect(10, 10, 150, 100);
